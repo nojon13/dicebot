@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>DiceBot</title>
+
+            <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+            <!-- MY STYLE SHEET -->
+        <link rel="stylesheet" href="css/master.css">
+
+            <!-- JAVASCRIPT -->
+        <script src="js/game.js" charset="utf-8"></script>
+
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="dicebot-head">
+                <h1 class="dicebot-header">DiceBot</h1>
+                <div class="dice-box">
+                    <div class="column">
+                        <h2 id="namePlayer1">Player 1</h2>
+                    </div>
+                    <div class="column">
+                        <h2 id="namePlayer2">Player 2</h2>
+                    </div>
+                    <div class="column">
+                        <img id="die1" src="img/dice1.png" alt="die1">
+                    </div>
+                    <div class="column">
+                        <img id="die2" src="img/dice1.png" alt="die2">
+                    </div>
+                </div>
+
+                <audio preload="auto" src="audio/dice.mp3">
+
+                </audio>
+
+                <input type="button" onclick="names()" id="button" value="START">
+                <div class="status-div">
+                    <h1 id="status"></h1>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </body>
+</html>
